@@ -3,154 +3,279 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azad Ansari — Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Azad Mumtaz Ansari — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f5f5f5; color: #1a1a2e; line-height: 1.6; }
-    .resume { max-width: 800px; margin: 20px auto; background: #fff; box-shadow: 0 2px 20px rgba(0,0,0,0.08); padding: 48px 56px; }
-    @media print { body { background: #fff; } .resume { box-shadow: none; margin: 0; padding: 32px 40px; } .no-print { display: none !important; } }
-    .print-btn { position: fixed; top: 20px; right: 20px; padding: 12px 24px; background: #1a1a2e; color: #fff; border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; cursor: pointer; font-size: 0.9rem; z-index: 100; }
-    .print-btn:hover { background: #2d2d4e; }
-    .header { border-bottom: 2px solid #1a1a2e; padding-bottom: 16px; margin-bottom: 24px; }
-    .header h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; }
-    .header .tagline { font-size: 1.05rem; color: #4a4a6a; font-weight: 500; margin-top: 2px; }
-    .header .contact-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; font-size: 0.82rem; color: #555; }
-    .header .contact-row a { color: #2563eb; text-decoration: none; }
-    .section { margin-bottom: 22px; }
-    .section-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #1a1a2e; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-bottom: 12px; }
-    .summary { font-size: 0.9rem; color: #444; }
-    .entry { margin-bottom: 16px; }
-    .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
-    .entry-title { font-size: 1rem; font-weight: 700; }
-    .entry-date { font-size: 0.8rem; color: #777; font-style: italic; white-space: nowrap; }
-    .entry-sub { font-size: 0.88rem; color: #2563eb; font-weight: 500; }
-    .entry-tech { font-size: 0.78rem; color: #888; margin-top: 2px; }
-    .entry ul { margin-top: 6px; padding-left: 18px; }
-    .entry li { font-size: 0.88rem; color: #444; margin-bottom: 3px; }
-    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 32px; }
-    .skill-row { display: flex; gap: 8px; font-size: 0.88rem; }
-    .skill-cat { font-weight: 600; min-width: 120px; color: #1a1a2e; }
-    .skill-val { color: #444; }
-    .edu-header { display: flex; justify-content: space-between; }
-    .edu-title { font-weight: 700; font-size: 0.95rem; }
-    .edu-place { font-size: 0.88rem; color: #555; }
+
+    body {
+      font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      color: #1a1a1a;
+      line-height: 1.55;
+      font-size: 13.5px;
+    }
+
+    .resume {
+      max-width: 794px; /* A4 width */
+      margin: 24px auto;
+      background: #fff;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+      padding: 40px 48px;
+    }
+
+    @media print {
+      body { background: #fff; margin: 0; }
+      .resume { box-shadow: none; margin: 0; padding: 28px 36px; }
+      .no-print { display: none !important; }
+      @page { margin: 0.4in; }
+    }
+
+    /* ── Print Button ── */
+    .print-btn {
+      position: fixed; top: 16px; right: 16px;
+      padding: 10px 22px; background: #111; color: #fff;
+      border: none; border-radius: 8px; font-family: 'Inter', sans-serif;
+      font-weight: 600; cursor: pointer; font-size: 0.85rem; z-index: 100;
+      transition: background 0.2s;
+    }
+    .print-btn:hover { background: #333; }
+
+    /* ── Header ── */
+    .header { text-align: center; padding-bottom: 16px; margin-bottom: 20px; border-bottom: 2px solid #111; }
+    .header h1 { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; text-transform: uppercase; }
+    .header .tagline { font-size: 0.95rem; color: #333; font-weight: 500; margin-top: 4px; letter-spacing: 0.5px; }
+    .header .contact-row {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 6px 16px; margin-top: 10px; font-size: 0.78rem; color: #444;
+    }
+    .header .contact-row a { color: #111; text-decoration: none; border-bottom: 1px dotted #888; }
+    .header .contact-row span::before { margin-right: 4px; }
+
+    /* ── Sections ── */
+    .section { margin-bottom: 18px; }
+    .section-title {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2.5px; color: #fff; background: #111;
+      padding: 4px 10px; margin-bottom: 10px; display: inline-block;
+    }
+    .section-line { border: none; border-top: 1px solid #ddd; margin: 0 0 10px 0; }
+
+    /* ── Summary ── */
+    .summary { font-size: 0.88rem; color: #333; line-height: 1.65; }
+
+    /* ── Entries (Experience/Projects) ── */
+    .entry { margin-bottom: 14px; }
+    .entry-row { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-title { font-size: 0.95rem; font-weight: 700; }
+    .entry-date { font-size: 0.78rem; color: #666; font-weight: 500; white-space: nowrap; }
+    .entry-sub { font-size: 0.85rem; color: #555; font-weight: 500; font-style: italic; }
+    .entry-tech { font-size: 0.75rem; color: #777; margin-top: 2px; font-style: italic; }
+    .entry ul { margin-top: 5px; padding-left: 16px; }
+    .entry li { font-size: 0.85rem; color: #333; margin-bottom: 2px; line-height: 1.55; }
+
+    /* ── Skills ── */
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table td { padding: 4px 0; font-size: 0.85rem; vertical-align: top; }
+    .skills-table .cat { font-weight: 700; width: 140px; color: #111; }
+    .skills-table .val { color: #333; }
+
+    /* ── Education ── */
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+    .edu-title { font-weight: 700; font-size: 0.9rem; }
+    .edu-place { font-size: 0.82rem; color: #555; }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .resume { padding: 24px 20px; margin: 0; }
+      .header .contact-row { flex-direction: column; align-items: center; gap: 4px; }
+      .entry-row { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
-  <button class="print-btn no-print" onclick="window.print()">📄 Download as PDF</button>
+  <button class="print-btn no-print" onclick="window.print()">⬇ Download PDF</button>
   <div class="resume">
+
+    <!-- Header -->
     <div class="header">
-      <h1>Azad Ansari</h1>
-      <p class="tagline">Python Developer · AI Automation Engineer · Full-Stack Developer</p>
+      <h1>Azad Mumtaz Ansari</h1>
+      <p class="tagline">Software Developer · Python · AI Automation · Full-Stack</p>
       <div class="contact-row">
-        <span>📧 <a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></span>
         <span>📞 +91 7208434724</span>
+        <span>📧 <a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></span>
         <span>📍 Mumbai, India</span>
-        <span>🐙 <a href="https://github.com/ansariazad" target="_blank">github.com/ansariazad</a></span>
-        <span>💼 <a href="https://www.linkedin.com/in/azad-ansari-902035297/" target="_blank">LinkedIn</a></span>
+        <span>🔗 <a href="https://github.com/ansariazad" target="_blank">github.com/ansariazad</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/azad-ansari-902035297/" target="_blank">LinkedIn</a></span>
       </div>
     </div>
 
+    <!-- Summary -->
     <div class="section">
-      <h2 class="section-title">Professional Summary</h2>
-      <p class="summary">BSc Computer Science graduate (Mumbai) with hands-on experience building production-grade AI automation systems, autonomous AI agents, and full-stack web applications. Proficient in Python, JavaScript/Next.js, LLM integration, and API-driven architectures. Designed an autonomous content engine processing 4 daily outputs with zero human intervention. Seeking roles in Python development, AI engineering, or backend/full-stack development.</p>
+      <div class="section-title">Professional Summary</div>
+      <hr class="section-line">
+      <p class="summary">BSc Computer Science graduate with 1.5+ years of professional experience and hands-on expertise in Python development, AI automation, and full-stack web applications. Built production-grade systems including an autonomous AI content pipeline processing 4 daily outputs and an LLM-powered agent with 32+ system control tools. Proficient in Python, FastAPI, React/Next.js, REST API design, and database management. Seeking a software development role to contribute technical skills to an engineering team.</p>
     </div>
 
+    <!-- Professional Experience -->
     <div class="section">
-      <h2 class="section-title">Technical Projects</h2>
+      <div class="section-title">Professional Experience</div>
+      <hr class="section-line">
 
       <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">AutoShorts — AI Content Automation Engine</span>
-          <span class="entry-date">2025 — Present</span>
+        <div class="entry-row">
+          <span class="entry-title">Operations Associate</span>
+          <span class="entry-date">Feb 2024 — Nov 2025</span>
         </div>
-        <p class="entry-tech">Python · Groq/Ollama LLM · Edge-TTS · FFmpeg · YouTube Data API · SQLite · Pexels API</p>
+        <div class="entry-sub">DMart (Avenue Supermarts Ltd), Mumbai</div>
         <ul>
-          <li>Engineered end-to-end pipeline: AI script generation → validation → TTS voice → video assembly → YouTube upload</li>
-          <li>Implemented SAECS prompt framework with 5-dimension AI quality gate (auto-reject/retry loop)</li>
-          <li>Built video assembler with Pillow-generated subtitle overlays and M3 hardware acceleration</li>
-          <li>Designed SQLite deduplication tracker (60-day topic cooldown, 30-day clip cooldown, voice rotation)</li>
-          <li>Automated daily scheduling via cron with jittered upload times mimicking natural patterns</li>
+          <li>Managed high-frequency transactional data processing with <strong>0% error rate</strong> across 500+ daily transactions, ensuring complete database accuracy</li>
+          <li>Executed complex billing and inventory system workflows following strict SOPs, maintaining <strong>100% database integrity</strong></li>
+          <li>Resolved customer and stakeholder queries under high-pressure scenarios, developing strong problem-solving and communication skills</li>
+          <li>Collaborated with cross-functional teams to streamline inventory tracking and reporting processes</li>
         </ul>
       </div>
 
       <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">ClawBot — Autonomous AI Mac Assistant</span>
+        <div class="entry-row">
+          <span class="entry-title">Research & Data Intelligence Specialist</span>
+          <span class="entry-date">Dec 2025 — Present</span>
+        </div>
+        <div class="entry-sub">Independent Consultant, Mumbai</div>
+        <ul>
+          <li>Developed structured research methodologies for identifying and qualifying digital assets and partnership opportunities</li>
+          <li>Designed and optimized <strong>Google Sheets dashboards</strong> for tracking competitor metrics and growth analytics</li>
+          <li>Applied data-driven decision frameworks to deliver actionable market intelligence reports</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Technical Projects -->
+    <div class="section">
+      <div class="section-title">Technical Projects</div>
+      <hr class="section-line">
+
+      <div class="entry">
+        <div class="entry-row">
+          <span class="entry-title">AutoShorts — AI Content Automation Engine</span>
+          <span class="entry-date">2025 — Present</span>
+        </div>
+        <div class="entry-tech">Python · Groq/Ollama LLM · Edge-TTS · FFmpeg · YouTube Data API v3 · SQLite · Pexels API</div>
+        <ul>
+          <li>Engineered fully autonomous pipeline: AI script generation → 5-dimension quality validation → TTS voice synthesis → video assembly → YouTube upload</li>
+          <li>Built SAECS prompt framework with AI quality gate achieving auto-reject/retry loop for content consistency</li>
+          <li>Designed SQLite deduplication engine with 60-day topic cooldown and 30-day clip cooldown preventing content overlap</li>
+          <li>Automated daily scheduling via cron with jittered upload times, processing <strong>4 videos/day with zero intervention</strong></li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-row">
+          <span class="entry-title">ClawBot — Autonomous AI Mac Agent</span>
           <span class="entry-date">2026</span>
         </div>
-        <p class="entry-tech">Python · Groq LLM · Telegram Bot API · AppleScript · CoinGecko · Yahoo Finance</p>
+        <div class="entry-tech">Python · Groq LLM · Telegram Bot API · AppleScript · CoinGecko API · Yahoo Finance</div>
         <ul>
-          <li>Built AI agent with 32+ tools spanning system control, messaging, trading, and file management</li>
-          <li>Implemented LLM-powered tool-calling architecture with JSON reasoning and multi-tool chaining</li>
-          <li>Integrated WhatsApp/Telegram messaging, real-time crypto/stock monitoring, macOS system control</li>
+          <li>Built AI-powered autonomous agent with <strong>32+ tools</strong> spanning system control, messaging, trading, and file management</li>
+          <li>Implemented LLM tool-calling architecture with JSON reasoning chain and multi-tool chaining capabilities</li>
+          <li>Integrated WhatsApp/Telegram messaging, real-time crypto/stock monitoring, and macOS system control via AppleScript</li>
           <li>Designed security layer with dangerous-command detection and owner-only confirmation flows</li>
         </ul>
       </div>
 
       <div class="entry">
-        <div class="entry-header">
+        <div class="entry-row">
           <span class="entry-title">EAHP — Emergency Ambulance Hiring Portal</span>
           <span class="entry-date">2025</span>
         </div>
-        <p class="entry-tech">Next.js 16 · React 19 · Supabase · Leaflet.js · Recharts · jsPDF · Framer Motion · PHP/MySQL</p>
+        <div class="entry-tech">Next.js 16 · React 19 · Supabase · Leaflet.js · Recharts · jsPDF · Framer Motion</div>
         <ul>
-          <li>Developed full-stack ambulance booking platform with real-time GPS tracking via Leaflet.js</li>
-          <li>Built admin dashboard with role-based access, booking analytics, and PDF receipt generation</li>
-          <li>Migrated from PHP/MySQL monolith to Next.js + Supabase with auth middleware</li>
+          <li>Developed full-stack emergency services platform with real-time GPS tracking via Leaflet.js</li>
+          <li>Built admin dashboard with role-based access control, booking analytics, and automated PDF receipt generation</li>
+          <li>Migrated legacy PHP/MySQL monolith to modern Next.js + Supabase stack with auth middleware</li>
         </ul>
       </div>
 
       <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">CryptoWatch — Live Cryptocurrency Dashboard</span>
+        <div class="entry-row">
+          <span class="entry-title">CryptoWatch — Real-time Cryptocurrency Dashboard</span>
           <span class="entry-date">2025</span>
         </div>
-        <p class="entry-tech">Python · Flask · CoinGecko API · Chart.js · SMTP</p>
+        <div class="entry-tech">Python · Flask · CoinGecko API · Chart.js · SMTP</div>
         <ul>
-          <li>Built real-time crypto dashboard tracking 50+ assets with interactive historical charts</li>
-          <li>Implemented portfolio calculator with multi-currency profit/loss tracking (INR/USD)</li>
-          <li>Designed price alert system with configurable thresholds and email notifications</li>
+          <li>Built real-time dashboard tracking 50+ crypto assets with interactive 7d/30d/90d historical charts</li>
+          <li>Implemented portfolio calculator with multi-currency profit/loss tracking and configurable price alerts via email</li>
         </ul>
       </div>
 
       <div class="entry">
-        <div class="entry-header">
+        <div class="entry-row">
           <span class="entry-title">TaskFlow — RESTful Task Management API</span>
           <span class="entry-date">2025</span>
         </div>
-        <p class="entry-tech">Python · FastAPI · SQLite · JWT · Swagger/OpenAPI</p>
+        <div class="entry-tech">Python · FastAPI · SQLite · JWT · Swagger/OpenAPI</div>
         <ul>
-          <li>Designed REST API with JWT authentication, token rotation, and role-based permissions</li>
-          <li>Implemented full CRUD with advanced filtering, sorting, pagination, and search</li>
-          <li>Auto-generated interactive Swagger/OpenAPI documentation</li>
+          <li>Designed production-grade REST API with JWT authentication, access/refresh token rotation, and role-based permissions</li>
+          <li>Implemented advanced CRUD with filtering, sorting, pagination, and auto-generated Swagger documentation</li>
         </ul>
       </div>
     </div>
 
+    <!-- Technical Skills -->
     <div class="section">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-row"><span class="skill-cat">Languages</span><span class="skill-val">Python, JavaScript, PHP, C#, SQL, Bash</span></div>
-        <div class="skill-row"><span class="skill-cat">AI / ML</span><span class="skill-val">LLM Prompting, Groq, Ollama, Edge-TTS, n8n</span></div>
-        <div class="skill-row"><span class="skill-cat">Frontend</span><span class="skill-val">React, Next.js, HTML/CSS, Framer Motion</span></div>
-        <div class="skill-row"><span class="skill-cat">Backend</span><span class="skill-val">FastAPI, Flask, REST APIs, Supabase, SQLite</span></div>
-        <div class="skill-row"><span class="skill-cat">Tools</span><span class="skill-val">Git, FFmpeg, YouTube API, Pexels API, cron</span></div>
-        <div class="skill-row"><span class="skill-cat">Platforms</span><span class="skill-val">macOS, Linux, Vercel, Unity Engine</span></div>
+      <div class="section-title">Technical Skills</div>
+      <hr class="section-line">
+      <table class="skills-table">
+        <tr><td class="cat">Languages</td><td class="val">Python, JavaScript, PHP, C#, SQL, Bash</td></tr>
+        <tr><td class="cat">AI / Automation</td><td class="val">LLM Prompt Engineering, Groq API, Ollama, Edge-TTS, FFmpeg, n8n</td></tr>
+        <tr><td class="cat">Frontend</td><td class="val">React.js, Next.js, HTML5/CSS3, Framer Motion, Chart.js</td></tr>
+        <tr><td class="cat">Backend</td><td class="val">FastAPI, Flask, REST API Design, Supabase, JWT Authentication</td></tr>
+        <tr><td class="cat">Databases</td><td class="val">SQLite, MySQL, Supabase (PostgreSQL)</td></tr>
+        <tr><td class="cat">Tools & Platforms</td><td class="val">Git, GitHub, Vercel, YouTube Data API, Cron, macOS, Linux</td></tr>
+      </table>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <hr class="section-line">
+
+      <div class="entry" style="margin-bottom:10px;">
+        <div class="edu-row">
+          <span class="edu-title">Bachelor of Science (BSc) — Computer Science</span>
+          <span class="entry-date">2023 — 2026</span>
+        </div>
+        <p class="edu-place">Sheth L.U.J College of Arts & Sir M.V. College of Science & Commerce, Mumbai</p>
+      </div>
+
+      <div class="entry" style="margin-bottom:10px;">
+        <div class="edu-row">
+          <span class="edu-title">Higher Secondary Certificate (HSC) — Science</span>
+          <span class="entry-date">2022</span>
+        </div>
+        <p class="edu-place">V.P.M.'s Valia College of Arts, Commerce & Science, Mumbai</p>
+      </div>
+
+      <div class="entry" style="margin-bottom:10px;">
+        <div class="edu-row">
+          <span class="edu-title">Secondary School Certificate (SSC)</span>
+          <span class="entry-date">2020</span>
+        </div>
+        <p class="edu-place">Airport High School, Mumbai — 65%</p>
       </div>
     </div>
 
+    <!-- Additional -->
     <div class="section">
-      <h2 class="section-title">Education</h2>
-      <div class="entry">
-        <div class="edu-header">
-          <span class="edu-title">Bachelor of Science — Computer Science</span>
-          <span class="entry-date">2023 — 2026</span>
-        </div>
-        <p class="edu-place">MMVLU College, Mumbai</p>
-      </div>
+      <div class="section-title">Additional Information</div>
+      <hr class="section-line">
+      <table class="skills-table">
+        <tr><td class="cat">Languages</td><td class="val">English (Professional), Hindi (Fluent), Marathi (Native)</td></tr>
+        <tr><td class="cat">Availability</td><td class="val">Immediate joiner — Full-time / Part-time / Internship</td></tr>
+        <tr><td class="cat">Interests</td><td class="val">AI Agent Architectures, Open Source, System Automation, Game Development</td></tr>
+      </table>
     </div>
+
   </div>
 </body>
 </html>
