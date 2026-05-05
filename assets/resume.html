@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azad Ansari — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f5f5f5; color: #1a1a2e; line-height: 1.6; }
+    .resume { max-width: 800px; margin: 20px auto; background: #fff; box-shadow: 0 2px 20px rgba(0,0,0,0.08); padding: 48px 56px; }
+    @media print { body { background: #fff; } .resume { box-shadow: none; margin: 0; padding: 32px 40px; } .no-print { display: none !important; } }
+    .print-btn { position: fixed; top: 20px; right: 20px; padding: 12px 24px; background: #1a1a2e; color: #fff; border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; cursor: pointer; font-size: 0.9rem; z-index: 100; }
+    .print-btn:hover { background: #2d2d4e; }
+    .header { border-bottom: 2px solid #1a1a2e; padding-bottom: 16px; margin-bottom: 24px; }
+    .header h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; }
+    .header .tagline { font-size: 1.05rem; color: #4a4a6a; font-weight: 500; margin-top: 2px; }
+    .header .contact-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; font-size: 0.82rem; color: #555; }
+    .header .contact-row a { color: #2563eb; text-decoration: none; }
+    .section { margin-bottom: 22px; }
+    .section-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #1a1a2e; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-bottom: 12px; }
+    .summary { font-size: 0.9rem; color: #444; }
+    .entry { margin-bottom: 16px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-title { font-size: 1rem; font-weight: 700; }
+    .entry-date { font-size: 0.8rem; color: #777; font-style: italic; white-space: nowrap; }
+    .entry-sub { font-size: 0.88rem; color: #2563eb; font-weight: 500; }
+    .entry-tech { font-size: 0.78rem; color: #888; margin-top: 2px; }
+    .entry ul { margin-top: 6px; padding-left: 18px; }
+    .entry li { font-size: 0.88rem; color: #444; margin-bottom: 3px; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 32px; }
+    .skill-row { display: flex; gap: 8px; font-size: 0.88rem; }
+    .skill-cat { font-weight: 600; min-width: 120px; color: #1a1a2e; }
+    .skill-val { color: #444; }
+    .edu-header { display: flex; justify-content: space-between; }
+    .edu-title { font-weight: 700; font-size: 0.95rem; }
+    .edu-place { font-size: 0.88rem; color: #555; }
+  </style>
+</head>
+<body>
+  <button class="print-btn no-print" onclick="window.print()">📄 Download as PDF</button>
+  <div class="resume">
+    <div class="header">
+      <h1>Azad Ansari</h1>
+      <p class="tagline">Python Developer · AI Automation Engineer · Full-Stack Developer</p>
+      <div class="contact-row">
+        <span>📧 <a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></span>
+        <span>📞 +91 7208434724</span>
+        <span>📍 Mumbai, India</span>
+        <span>🐙 <a href="https://github.com/ansariazad" target="_blank">github.com/ansariazad</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/azad-ansari-902035297/" target="_blank">LinkedIn</a></span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary">BSc Computer Science graduate (Mumbai) with hands-on experience building production-grade AI automation systems, autonomous AI agents, and full-stack web applications. Proficient in Python, JavaScript/Next.js, LLM integration, and API-driven architectures. Designed an autonomous content engine processing 4 daily outputs with zero human intervention. Seeking roles in Python development, AI engineering, or backend/full-stack development.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Technical Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">AutoShorts — AI Content Automation Engine</span>
+          <span class="entry-date">2025 — Present</span>
+        </div>
+        <p class="entry-tech">Python · Groq/Ollama LLM · Edge-TTS · FFmpeg · YouTube Data API · SQLite · Pexels API</p>
+        <ul>
+          <li>Engineered end-to-end pipeline: AI script generation → validation → TTS voice → video assembly → YouTube upload</li>
+          <li>Implemented SAECS prompt framework with 5-dimension AI quality gate (auto-reject/retry loop)</li>
+          <li>Built video assembler with Pillow-generated subtitle overlays and M3 hardware acceleration</li>
+          <li>Designed SQLite deduplication tracker (60-day topic cooldown, 30-day clip cooldown, voice rotation)</li>
+          <li>Automated daily scheduling via cron with jittered upload times mimicking natural patterns</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">ClawBot — Autonomous AI Mac Assistant</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <p class="entry-tech">Python · Groq LLM · Telegram Bot API · AppleScript · CoinGecko · Yahoo Finance</p>
+        <ul>
+          <li>Built AI agent with 32+ tools spanning system control, messaging, trading, and file management</li>
+          <li>Implemented LLM-powered tool-calling architecture with JSON reasoning and multi-tool chaining</li>
+          <li>Integrated WhatsApp/Telegram messaging, real-time crypto/stock monitoring, macOS system control</li>
+          <li>Designed security layer with dangerous-command detection and owner-only confirmation flows</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">EAHP — Emergency Ambulance Hiring Portal</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <p class="entry-tech">Next.js 16 · React 19 · Supabase · Leaflet.js · Recharts · jsPDF · Framer Motion · PHP/MySQL</p>
+        <ul>
+          <li>Developed full-stack ambulance booking platform with real-time GPS tracking via Leaflet.js</li>
+          <li>Built admin dashboard with role-based access, booking analytics, and PDF receipt generation</li>
+          <li>Migrated from PHP/MySQL monolith to Next.js + Supabase with auth middleware</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">CryptoWatch — Live Cryptocurrency Dashboard</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <p class="entry-tech">Python · Flask · CoinGecko API · Chart.js · SMTP</p>
+        <ul>
+          <li>Built real-time crypto dashboard tracking 50+ assets with interactive historical charts</li>
+          <li>Implemented portfolio calculator with multi-currency profit/loss tracking (INR/USD)</li>
+          <li>Designed price alert system with configurable thresholds and email notifications</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">TaskFlow — RESTful Task Management API</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <p class="entry-tech">Python · FastAPI · SQLite · JWT · Swagger/OpenAPI</p>
+        <ul>
+          <li>Designed REST API with JWT authentication, token rotation, and role-based permissions</li>
+          <li>Implemented full CRUD with advanced filtering, sorting, pagination, and search</li>
+          <li>Auto-generated interactive Swagger/OpenAPI documentation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-row"><span class="skill-cat">Languages</span><span class="skill-val">Python, JavaScript, PHP, C#, SQL, Bash</span></div>
+        <div class="skill-row"><span class="skill-cat">AI / ML</span><span class="skill-val">LLM Prompting, Groq, Ollama, Edge-TTS, n8n</span></div>
+        <div class="skill-row"><span class="skill-cat">Frontend</span><span class="skill-val">React, Next.js, HTML/CSS, Framer Motion</span></div>
+        <div class="skill-row"><span class="skill-cat">Backend</span><span class="skill-val">FastAPI, Flask, REST APIs, Supabase, SQLite</span></div>
+        <div class="skill-row"><span class="skill-cat">Tools</span><span class="skill-val">Git, FFmpeg, YouTube API, Pexels API, cron</span></div>
+        <div class="skill-row"><span class="skill-cat">Platforms</span><span class="skill-val">macOS, Linux, Vercel, Unity Engine</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <div class="edu-header">
+          <span class="edu-title">Bachelor of Science — Computer Science</span>
+          <span class="entry-date">2023 — 2026</span>
+        </div>
+        <p class="edu-place">MMVLU College, Mumbai</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
