@@ -3,240 +3,421 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azad Ansari - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Azad Ansari — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #e8e8e8; color: #1a1a1a; font-size: 10px; line-height: 1.45; }
 
-    .resume {
-      width: 794px; max-height: 1123px; margin: 20px auto;
-      background: #fff; box-shadow: 0 2px 20px rgba(0,0,0,0.12);
-      padding: 0; overflow: hidden; display: flex;
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #e2e2e2;
+      color: #2d2d2d;
+      font-size: 9.5px;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      max-height: 1123px;
+      margin: 24px auto;
+      background: #fff;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
     }
 
     @media print {
       body { background: #fff; margin: 0; }
-      .resume { box-shadow: none; margin: 0; max-height: none; }
+      .page { box-shadow: none; margin: 0; max-height: none; }
       .no-print { display: none !important; }
       @page { margin: 0; size: A4; }
     }
 
     .print-btn {
-      position: fixed; top: 12px; right: 12px; padding: 10px 22px;
-      background: linear-gradient(135deg, #667eea, #764ba2); color: #fff;
-      border: none; border-radius: 8px; font-family: 'Inter'; font-weight: 700;
-      cursor: pointer; font-size: 13px; z-index: 100;
-      box-shadow: 0 3px 12px rgba(102,126,234,0.4);
+      position: fixed; top: 14px; right: 14px;
+      padding: 10px 24px; border: none; border-radius: 10px;
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+      color: #fff; font-family: 'Outfit'; font-weight: 700;
+      font-size: 13px; cursor: pointer; z-index: 999;
+      box-shadow: 0 4px 16px rgba(15,23,42,0.3);
+      transition: transform 0.2s;
+    }
+    .print-btn:hover { transform: translateY(-2px); }
+
+    /* ── HEADER ── */
+    .header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      padding: 26px 32px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 160px; height: 160px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+    }
+    .header h1 {
+      font-family: 'Outfit';
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 2px;
+    }
+    .header .role {
+      font-size: 11px;
+      font-weight: 500;
+      color: #94a3b8;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 20px;
+    }
+    .contact-item {
+      font-size: 9px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .contact-item .icon {
+      width: 14px; height: 14px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 8px;
+    }
+    .contact-item a { color: #93c5fd; text-decoration: none; }
+
+    /* ── BODY ── */
+    .body-wrap {
+      display: flex;
+      padding: 0;
     }
 
-    /* LEFT SIDEBAR */
-    .sidebar {
-      width: 240px; background: #1a1a2e; color: #e0e0e0;
-      padding: 28px 18px 20px; flex-shrink: 0;
+    .main {
+      flex: 1;
+      padding: 18px 24px 16px 28px;
+      border-right: 1px solid #f0f0f0;
     }
-    .sidebar .name { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -0.5px; margin-bottom: 2px; }
-    .sidebar .title { font-size: 10px; color: #a0a0cc; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
-    .sidebar .divider { height: 1px; background: rgba(255,255,255,0.12); margin: 12px 0; }
 
-    .sidebar .sec-title {
-      font-size: 8px; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 2.5px; color: #8888cc; margin-bottom: 8px;
+    .side {
+      width: 220px;
+      padding: 18px 20px 16px;
+      background: #fafbfc;
     }
-    .sidebar .info-item { font-size: 9px; color: #ccc; margin-bottom: 4px; line-height: 1.4; }
-    .sidebar .info-item strong { color: #fff; }
-    .sidebar a { color: #a0c4ff; text-decoration: none; }
 
-    .sidebar .skill-tag {
-      display: inline-block; background: rgba(255,255,255,0.08); color: #ccc;
-      padding: 3px 8px; border-radius: 4px; font-size: 8px; margin: 2px 2px;
+    /* ── SECTIONS ── */
+    .sec { margin-bottom: 12px; }
+    .sec-title {
+      font-family: 'Outfit';
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #0f172a;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #0f172a;
+      margin-bottom: 8px;
+    }
+    .side .sec-title {
+      border-bottom-color: #cbd5e1;
+      color: #475569;
+      font-size: 8.5px;
+    }
+
+    /* ── ENTRIES ── */
+    .entry { margin-bottom: 8px; }
+    .entry-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .entry-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .entry-date {
+      font-size: 8px;
+      color: #94a3b8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .entry-sub {
+      font-size: 9px;
+      color: #64748b;
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+    .entry ul {
+      padding-left: 12px;
+      margin-top: 2px;
+    }
+    .entry li {
+      font-size: 9px;
+      color: #334155;
+      margin-bottom: 1.5px;
+      line-height: 1.45;
+    }
+    .entry li strong { color: #0f172a; }
+
+    /* ── OBJECTIVE ── */
+    .obj {
+      font-size: 9.5px;
+      color: #334155;
+      line-height: 1.55;
+      padding: 8px 12px;
+      background: #f8fafc;
+      border-left: 3px solid #0f172a;
+      border-radius: 0 6px 6px 0;
+    }
+    .obj strong { color: #0f172a; }
+
+    /* ── SIDEBAR SKILLS ── */
+    .skill-group { margin-bottom: 10px; }
+    .skill-label {
+      font-size: 8px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 3px; }
+    .tag {
+      font-size: 8px;
+      padding: 2.5px 7px;
+      background: #e2e8f0;
+      color: #334155;
+      border-radius: 4px;
       font-weight: 500;
     }
-
-    .sidebar .lang-item { font-size: 9px; color: #ccc; margin-bottom: 3px; }
-    .sidebar .lang-item strong { color: #fff; }
-
-    /* RIGHT CONTENT */
-    .content { flex: 1; padding: 24px 22px 16px; }
-
-    .content .sec-title {
-      font-size: 9px; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 2px; color: #1a1a2e; border-bottom: 2px solid #1a1a2e;
-      padding-bottom: 3px; margin-bottom: 8px;
+    .tag.highlight {
+      background: #0f172a;
+      color: #fff;
     }
-    .section { margin-bottom: 12px; }
 
-    .entry { margin-bottom: 8px; }
-    .entry-row { display: flex; justify-content: space-between; align-items: baseline; }
-    .entry-title { font-size: 10px; font-weight: 700; color: #1a1a2e; }
-    .entry-date { font-size: 8.5px; color: #888; font-weight: 500; }
-    .entry-sub { font-size: 9px; color: #666; font-style: italic; margin-bottom: 2px; }
-    .entry ul { margin: 2px 0 0; padding-left: 12px; }
-    .entry li { font-size: 9px; color: #333; margin-bottom: 2px; line-height: 1.4; }
-    .entry li strong { color: #1a1a2e; }
-
-    .obj-text { font-size: 9.5px; color: #333; line-height: 1.5; }
-    .obj-text strong { color: #1a1a2e; }
-
-    @media (max-width: 700px) {
-      .resume { width: 100%; flex-direction: column; max-height: none; }
-      .sidebar { width: 100%; }
+    /* ── SIDEBAR INFO ── */
+    .info-block { margin-bottom: 8px; }
+    .info-line {
+      font-size: 9px;
+      color: #475569;
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
+    .info-line strong { color: #0f172a; font-weight: 700; }
+    .dot {
+      width: 5px; height: 5px;
+      background: #0f172a;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── EDUCATION SIDEBAR ── */
+    .edu-item { margin-bottom: 6px; }
+    .edu-title { font-size: 9px; font-weight: 700; color: #0f172a; }
+    .edu-sub { font-size: 8px; color: #64748b; }
+    .edu-date { font-size: 7.5px; color: #94a3b8; font-weight: 600; }
   </style>
 </head>
 <body>
   <button class="print-btn no-print" onclick="window.print()">Download PDF</button>
-  <div class="resume">
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-      <div class="name">Azad Mumtaz<br>Ansari</div>
-      <div class="title">Data Annotator</div>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">Contact</div>
-      <div class="info-item">+91 7208434724</div>
-      <div class="info-item"><a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></div>
-      <div class="info-item">Mumbai, India</div>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">Online</div>
-      <div class="info-item"><a href="https://github.com/ansariazad">github.com/ansariazad</a></div>
-      <div class="info-item"><a href="https://ansariazad.github.io">ansariazad.github.io</a></div>
-      <div class="info-item"><a href="https://linkedin.com/in/azad-ansari-902035297">LinkedIn Profile</a></div>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">Core Skills</div>
-      <span class="skill-tag">Data Annotation</span>
-      <span class="skill-tag">Data Labeling</span>
-      <span class="skill-tag">Classification</span>
-      <span class="skill-tag">OCR Verification</span>
-      <span class="skill-tag">Quality Assurance</span>
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">SQL</span>
-      <span class="skill-tag">AI/ML Pipelines</span>
-      <span class="skill-tag">NLP</span>
-      <span class="skill-tag">Git & Docker</span>
-      <span class="skill-tag">FastAPI</span>
-      <span class="skill-tag">Excel</span>
-      <span class="skill-tag">SQLite</span>
-      <span class="skill-tag">Data Validation</span>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">Languages</div>
-      <div class="lang-item"><strong>English</strong> - Professional</div>
-      <div class="lang-item"><strong>Hindi</strong> - Fluent</div>
-      <div class="lang-item"><strong>Marathi</strong> - Native</div>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">GitHub</div>
-      <div class="info-item"><strong>11</strong> Public Repositories</div>
-      <div class="info-item"><strong>200+</strong> Commits</div>
-      <div class="info-item"><strong>8</strong> Live Projects</div>
-
-      <div class="divider"></div>
-
-      <div class="sec-title">Availability</div>
-      <div class="info-item"><strong>Immediate</strong> Joiner</div>
-      <div class="info-item">Rotating Shifts OK</div>
-      <div class="info-item">Marol, Mumbai</div>
+  <div class="page">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Azad Mumtaz Ansari</h1>
+      <div class="role">Data Annotator &bull; AI/ML &bull; Python Developer</div>
+      <div class="contact-grid">
+        <div class="contact-item"><span class="icon">P</span> +91 7208434724</div>
+        <div class="contact-item"><span class="icon">@</span> <a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></div>
+        <div class="contact-item"><span class="icon">L</span> Mumbai, India</div>
+        <div class="contact-item"><span class="icon">G</span> <a href="https://github.com/ansariazad">github.com/ansariazad</a></div>
+        <div class="contact-item"><span class="icon">W</span> <a href="https://ansariazad.github.io">ansariazad.github.io</a></div>
+        <div class="contact-item"><span class="icon">in</span> <a href="https://linkedin.com/in/azad-ansari-902035297">LinkedIn</a></div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="content">
+    <div class="body-wrap">
+      <!-- MAIN CONTENT -->
+      <div class="main">
 
-      <div class="section">
-        <div class="sec-title">Objective</div>
-        <p class="obj-text">Detail-oriented Computer Science graduate with hands-on <strong>AI experience</strong> and a proven <strong>0% error rate</strong> in high-volume data processing. Seeking <strong>Data Annotator</strong> role at <strong>i3systems</strong> to deliver high-quality training data for insurance document processing AI models.</p>
+        <div class="sec">
+          <div class="sec-title">Objective</div>
+          <div class="obj">
+            Detail-oriented Computer Science graduate with hands-on <strong>AI experience</strong> and a proven <strong>0% error rate</strong> in high-volume data processing. Seeking <strong>Data Annotator</strong> role at <strong>i3systems</strong> to deliver high-quality training data for intelligent document processing and insurance automation AI models.
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-title">Experience</div>
+
+          <div class="entry">
+            <div class="entry-row">
+              <span class="entry-title">Operations Associate</span>
+              <span class="entry-date">Feb 2024 - Nov 2025</span>
+            </div>
+            <div class="entry-sub">DMart (Avenue Supermarts Ltd) - Mumbai</div>
+            <ul>
+              <li>Processed <strong>500+ daily transactions</strong> with <strong>0% error rate</strong> across billing & inventory systems</li>
+              <li>Classified products across <strong>50+ categories</strong> with consistent labeling standards & strict SOPs</li>
+              <li>Maintained <strong>100% database integrity</strong> through systematic verification and quality auditing</li>
+              <li>Resolved data discrepancies by cross-referencing multiple data sources</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-row">
+              <span class="entry-title">Research & Data Specialist</span>
+              <span class="entry-date">Dec 2025 - Present</span>
+            </div>
+            <div class="entry-sub">Independent - Mumbai</div>
+            <ul>
+              <li>Structured large datasets with consistent tagging, classification & reporting dashboards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-title">AI & Data Projects</div>
+
+          <div class="entry">
+            <div class="entry-row">
+              <span class="entry-title">AutoShorts - AI Content Engine</span>
+              <span class="entry-date">Python, Groq, SQLite</span>
+            </div>
+            <ul>
+              <li>Built <strong>quality validation engine</strong> scoring AI-generated content against 10+ criteria</li>
+              <li>Designed <strong>deduplication system</strong> that classifies and tags data to prevent repetition at scale</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-row">
+              <span class="entry-title">ClawBot - AI Agent (32+ Tools)</span>
+              <span class="entry-date">Python, LLM, Telegram</span>
+            </div>
+            <ul>
+              <li><strong>Classifies user intents</strong> into 32+ tool categories using annotation-like logic</li>
+              <li>JSON-structured data pipelines for <strong>organizing and labeling</strong> tool responses</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-row">
+              <span class="entry-title">TaskFlow - REST API</span>
+              <span class="entry-date">FastAPI, JWT, Docker</span>
+            </div>
+            <ul>
+              <li>Production API with strict <strong>data validation</strong>, type checking, RBAC & error handling</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
-      <div class="section">
-        <div class="sec-title">Professional Experience</div>
+      <!-- SIDEBAR -->
+      <div class="side">
 
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">Operations Associate - DMart</span>
-            <span class="entry-date">Feb 2024 - Nov 2025</span>
+        <div class="sec">
+          <div class="sec-title">Core Skills</div>
+          <div class="skill-group">
+            <div class="skill-label">Data & Annotation</div>
+            <div class="tags">
+              <span class="tag highlight">Data Annotation</span>
+              <span class="tag highlight">Data Labeling</span>
+              <span class="tag">Classification</span>
+              <span class="tag">OCR Verification</span>
+              <span class="tag">Quality Assurance</span>
+              <span class="tag">Pattern Recognition</span>
+            </div>
           </div>
-          <div class="entry-sub">Avenue Supermarts Ltd, Mumbai</div>
-          <ul>
-            <li>Processed <strong>500+ daily transactions</strong> with <strong>0% error rate</strong> across billing systems</li>
-            <li>Classified products across <strong>50+ categories</strong> with consistent labeling standards</li>
-            <li>Maintained <strong>100% database integrity</strong> through systematic verification & QA</li>
-          </ul>
+          <div class="skill-group">
+            <div class="skill-label">Programming</div>
+            <div class="tags">
+              <span class="tag highlight">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag highlight">SQL</span>
+              <span class="tag">Bash</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">AI / ML</div>
+            <div class="tags">
+              <span class="tag">LLM Engineering</span>
+              <span class="tag">AI Pipelines</span>
+              <span class="tag">NLP</span>
+              <span class="tag">IDP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Tools</div>
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">Docker</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Excel</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
         </div>
 
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">Research & Data Specialist</span>
-            <span class="entry-date">Dec 2025 - Present</span>
+        <div class="sec">
+          <div class="sec-title">Education</div>
+          <div class="edu-item">
+            <div class="edu-title">BSc Computer Science</div>
+            <div class="edu-sub">Mumbai University</div>
+            <div class="edu-sub">Sheth L.U.J & Sir M.V. College</div>
+            <div class="edu-date">2023 - 2026</div>
           </div>
-          <div class="entry-sub">Independent, Mumbai</div>
-          <ul>
-            <li>Structured large datasets with consistent tagging, classification & reporting</li>
-          </ul>
+          <div class="edu-item">
+            <div class="edu-title">HSC (12th) - Science</div>
+            <div class="edu-sub">V.P.M.'s Valia College</div>
+            <div class="edu-date">2022</div>
+          </div>
         </div>
+
+        <div class="sec">
+          <div class="sec-title">Languages</div>
+          <div class="info-block">
+            <div class="info-line"><span class="dot"></span> <strong>English</strong> - Professional</div>
+            <div class="info-line"><span class="dot"></span> <strong>Hindi</strong> - Fluent</div>
+            <div class="info-line"><span class="dot"></span> <strong>Marathi</strong> - Native</div>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-title">GitHub</div>
+          <div class="info-block">
+            <div class="info-line"><strong>11</strong> Public Repositories</div>
+            <div class="info-line"><strong>200+</strong> Total Commits</div>
+            <div class="info-line"><strong>8</strong> Live Projects</div>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-title">Availability</div>
+          <div class="info-block">
+            <div class="info-line"><span class="dot"></span> <strong>Immediate</strong> Joiner</div>
+            <div class="info-line"><span class="dot"></span> Rotating Shifts OK</div>
+            <div class="info-line"><span class="dot"></span> Marol, Mumbai</div>
+          </div>
+        </div>
+
       </div>
-
-      <div class="section">
-        <div class="sec-title">AI & Data Projects</div>
-
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">AutoShorts - AI Content Engine</span>
-            <span class="entry-date">Python, Groq, SQLite</span>
-          </div>
-          <ul>
-            <li>Built <strong>quality validation engine</strong> scoring content against 10+ criteria</li>
-            <li>Designed <strong>deduplication system</strong> that classifies and tags data at scale</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">ClawBot - AI Agent (32+ Tools)</span>
-            <span class="entry-date">Python, LLM, Telegram</span>
-          </div>
-          <ul>
-            <li><strong>Classifies user intents</strong> into 32+ categories — annotation-like logic</li>
-            <li>JSON-structured pipelines for <strong>organizing and labeling</strong> tool responses</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">TaskFlow - REST API</span>
-            <span class="entry-date">FastAPI, JWT, Docker</span>
-          </div>
-          <ul>
-            <li>Production API with strict <strong>data validation</strong>, type checking & error handling</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="sec-title">Education</div>
-        <div class="entry">
-          <div class="entry-row">
-            <span class="entry-title">BSc Computer Science</span>
-            <span class="entry-date">2023 - 2026</span>
-          </div>
-          <div class="entry-sub">Sheth L.U.J College & Sir M.V. College, Mumbai University</div>
-        </div>
-        <div class="entry" style="margin-top:4px;">
-          <div class="entry-row">
-            <span class="entry-title">HSC (12th) - Science</span>
-            <span class="entry-date">2022</span>
-          </div>
-          <div class="entry-sub">V.P.M.'s Valia College, Mumbai</div>
-        </div>
-      </div>
-
     </div>
   </div>
 </body>
