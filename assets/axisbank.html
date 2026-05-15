@@ -3,190 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azad Ansari — Resume (Back Office)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Azad Ansari - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Inter',sans-serif;background:#e2e2e2;color:#1a1a1a;font-size:10px;line-height:1.5}
-    .page{width:794px;max-height:1123px;margin:20px auto;background:#fff;box-shadow:0 4px 30px rgba(0,0,0,.15);overflow:hidden}
-    @media print{body{background:#fff;margin:0}.page{box-shadow:none;margin:0;max-height:none}.no-print{display:none!important}@page{margin:0;size:A4}}
-    .print-btn{position:fixed;top:12px;right:12px;padding:10px 24px;background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;border:none;border-radius:10px;font-family:'Outfit';font-weight:700;font-size:13px;cursor:pointer;z-index:999;box-shadow:0 4px 16px rgba(30,64,175,.3)}
-    .header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);color:#fff;padding:28px 32px 22px;position:relative}
-    .header h1{font-family:'Outfit';font-size:26px;font-weight:800;letter-spacing:-0.5px;margin-bottom:2px}
-    .header .role{font-size:11px;font-weight:500;color:#93c5fd;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
-    .contact-grid{display:flex;flex-wrap:wrap;gap:4px 22px}
-    .contact-item{font-size:9px;color:#cbd5e1;display:flex;align-items:center;gap:5px}
-    .contact-item .ic{width:14px;height:14px;background:rgba(255,255,255,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:700}
-    .contact-item a{color:#93c5fd;text-decoration:none}
-    .body-wrap{display:flex}
-    .main{flex:1;padding:20px 24px 16px 28px;border-right:1px solid #f0f0f0}
-    .side{width:215px;padding:20px 18px 16px;background:#fafbfc}
-    .sec{margin-bottom:14px}
-    .sec-title{font-family:'Outfit';font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#0f172a;padding-bottom:4px;border-bottom:2px solid #0f172a;margin-bottom:8px}
-    .side .sec-title{border-bottom-color:#cbd5e1;color:#475569;font-size:8.5px}
-    .entry{margin-bottom:8px}
-    .entry-row{display:flex;justify-content:space-between;align-items:baseline}
-    .entry-title{font-size:10.5px;font-weight:700;color:#0f172a}
-    .entry-date{font-size:8px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-    .entry-sub{font-size:9px;color:#64748b;font-style:italic;margin-bottom:3px}
-    .entry ul{padding-left:12px;margin-top:2px}
-    .entry li{font-size:9px;color:#334155;margin-bottom:2px;line-height:1.45}
-    .entry li strong{color:#0f172a}
-    .obj{font-size:9.5px;color:#334155;line-height:1.55;padding:8px 12px;background:#f0f7ff;border-left:3px solid #1e40af;border-radius:0 6px 6px 0}
-    .obj strong{color:#0f172a}
-    .skill-group{margin-bottom:8px}
-    .skill-label{font-size:8px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-    .tags{display:flex;flex-wrap:wrap;gap:3px}
-    .tag{font-size:8px;padding:2.5px 7px;background:#e2e8f0;color:#334155;border-radius:4px;font-weight:500}
-    .tag.hl{background:#1e40af;color:#fff}
-    .info-line{font-size:9px;color:#475569;margin-bottom:3px;display:flex;align-items:center;gap:4px}
-    .info-line strong{color:#0f172a;font-weight:700}
-    .dot{width:5px;height:5px;background:#1e40af;border-radius:50%;flex-shrink:0}
-    .edu-item{margin-bottom:6px}
-    .edu-title{font-size:9px;font-weight:700;color:#0f172a}
-    .edu-sub{font-size:8px;color:#64748b}
-    .edu-date{font-size:7.5px;color:#94a3b8;font-weight:600}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', Arial, sans-serif; background: #f0f0f0; color: #222; font-size: 11px; line-height: 1.5; }
+    .page { width: 794px; min-height: 1123px; max-height: 1123px; margin: 16px auto; background: #fff; padding: 36px 44px 30px; box-shadow: 0 2px 12px rgba(0,0,0,.1); overflow: hidden; }
+    @media print { body { background: #fff; margin: 0; } .page { box-shadow: none; margin: 0; padding: 28px 36px 20px; max-height: none; } .no-print { display: none !important; } @page { margin: 0; size: A4; } }
+    .print-btn { position: fixed; top: 10px; right: 10px; padding: 8px 20px; background: #333; color: #fff; border: none; border-radius: 6px; font-family: 'Roboto'; font-weight: 700; font-size: 12px; cursor: pointer; z-index: 99; }
+
+    /* Header */
+    .name { font-size: 24px; font-weight: 700; color: #111; text-align: center; margin-bottom: 2px; }
+    .contact { text-align: center; font-size: 10.5px; color: #444; margin-bottom: 4px; }
+    .contact a { color: #1a73e8; text-decoration: none; }
+    .divider { border: none; border-top: 2px solid #222; margin: 10px 0; }
+
+    /* Sections */
+    .sec { margin-bottom: 12px; }
+    .sec-head { font-size: 12px; font-weight: 700; color: #111; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1.5px solid #333; padding-bottom: 3px; margin-bottom: 8px; }
+
+    /* Entries */
+    .entry { margin-bottom: 8px; }
+    .entry-top { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-title { font-size: 11px; font-weight: 700; color: #111; }
+    .entry-date { font-size: 10px; color: #555; font-weight: 500; }
+    .entry-org { font-size: 10.5px; color: #444; font-style: italic; }
+    .entry ul { padding-left: 16px; margin-top: 3px; }
+    .entry li { font-size: 10.5px; color: #333; margin-bottom: 2px; line-height: 1.5; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: 120px 1fr; row-gap: 3px; }
+    .sk-label { font-size: 10.5px; font-weight: 700; color: #222; }
+    .sk-value { font-size: 10.5px; color: #333; }
+
+    /* Summary */
+    .summary { font-size: 11px; color: #333; line-height: 1.6; }
   </style>
 </head>
 <body>
-  <button class="print-btn no-print" onclick="window.print()">Download PDF</button>
-  <div class="page">
-    <div class="header">
-      <h1>Azad Mumtaz Ansari</h1>
-      <div class="role">Back Office Executive &bull; Data Entry &bull; KYC Verification</div>
-      <div class="contact-grid">
-        <div class="contact-item"><span class="ic">P</span> +91 7208434724</div>
-        <div class="contact-item"><span class="ic">@</span> <a href="mailto:ansariazadcs232421@gmail.com">ansariazadcs232421@gmail.com</a></div>
-        <div class="contact-item"><span class="ic">L</span> Mumbai, India</div>
-        <div class="contact-item"><span class="ic">in</span> <a href="https://linkedin.com/in/azad-ansari-902035297">LinkedIn Profile</a></div>
+<button class="print-btn no-print" onclick="window.print()">Download PDF</button>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="name">AZAD MUMTAZ ANSARI</div>
+  <div class="contact">
+    +91 7208434724 &nbsp;|&nbsp; ansariazadcs232421@gmail.com &nbsp;|&nbsp; Mumbai, Maharashtra
+  </div>
+  <div class="contact">
+    <a href="https://linkedin.com/in/azad-ansari-902035297">linkedin.com/in/azad-ansari</a> &nbsp;|&nbsp;
+    <a href="https://ansariazad.github.io">ansariazad.github.io</a>
+  </div>
+  <hr class="divider">
+
+  <!-- SUMMARY -->
+  <div class="sec">
+    <div class="sec-head">Professional Summary</div>
+    <p class="summary">Result-driven operations professional with 2+ years of experience in back-office operations, data entry, document verification, and customer service. Proven track record of processing 500+ daily transactions with 0% error rate. Proficient in MS Excel, email management, and KYC verification. Strong communication skills in English, Hindi, and Marathi. Seeking Back Office Executive role at Axis Bank.</p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="sec">
+    <div class="sec-head">Professional Experience</div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Back Office Operations Associate</span>
+        <span class="entry-date">February 2024 — November 2025</span>
       </div>
+      <div class="entry-org">DMart (Avenue Supermarts Ltd) — Mumbai, India</div>
+      <ul>
+        <li>Processed <strong>500+ daily billing transactions</strong> with <strong>0% error rate</strong> across POS and ERP systems</li>
+        <li>Performed <strong>data entry and verification</strong> of 200+ product records daily in inventory management system</li>
+        <li>Conducted <strong>KYC-style document verification</strong> for vendor registrations, membership cards, and return policies</li>
+        <li>Managed <strong>email correspondence</strong> with 20+ vendors daily for order confirmations, invoice reconciliation, and delivery tracking</li>
+        <li>Prepared daily, weekly, and monthly <strong>Excel reports</strong> using VLOOKUP, Pivot Tables, and Conditional Formatting</li>
+        <li>Handled <strong>customer queries and complaints</strong> via chat, phone, and in-person — resolved 50+ queries per shift</li>
+        <li>Maintained <strong>filing system</strong> for 500+ vendor invoices and compliance documents with 100% audit readiness</li>
+        <li>Coordinated with billing, warehouse, and logistics teams for seamless <strong>back-office operations</strong></li>
+      </ul>
     </div>
-    <div class="body-wrap">
-      <div class="main">
-        <div class="sec">
-          <div class="sec-title">Objective</div>
-          <div class="obj">Dedicated and detail-oriented graduate with <strong>1.5+ years of operations experience</strong> at DMart handling <strong>500+ daily transactions with 0% error rate</strong>. Proficient in <strong>MS Excel, data entry, and KYC verification</strong>. Seeking a <strong>Back Office Executive</strong> role at <strong>Axis Bank</strong> to contribute strong data accuracy, communication, and organizational skills.</div>
-        </div>
 
-        <div class="sec">
-          <div class="sec-title">Professional Experience</div>
-          <div class="entry">
-            <div class="entry-row">
-              <span class="entry-title">Operations Associate</span>
-              <span class="entry-date">Feb 2024 — Nov 2025</span>
-            </div>
-            <div class="entry-sub">DMart (Avenue Supermarts Ltd) — Mumbai, India</div>
-            <ul>
-              <li>Processed <strong>500+ daily transactions</strong> with <strong>0% error rate</strong> across billing and inventory systems</li>
-              <li>Performed <strong>data entry and verification</strong> of product details, pricing, and inventory records</li>
-              <li>Managed <strong>KYC-style document verification</strong> for vendor onboarding and compliance checks</li>
-              <li>Operated <strong>MS Excel</strong> for daily reports, stock tracking, and data reconciliation</li>
-              <li>Handled <strong>email communication</strong> with vendors and internal departments for order coordination</li>
-              <li>Classified and categorized <strong>50+ product categories</strong> with consistent labeling standards</li>
-              <li>Resolved customer queries with <strong>excellent communication</strong> in English, Hindi, and Marathi</li>
-            </ul>
-          </div>
-          <div class="entry">
-            <div class="entry-row">
-              <span class="entry-title">Research & Data Specialist</span>
-              <span class="entry-date">Dec 2025 — Present</span>
-            </div>
-            <div class="entry-sub">Independent — Mumbai, India</div>
-            <ul>
-              <li>Managed structured <strong>data entry and reporting</strong> using Google Sheets and Excel dashboards</li>
-              <li>Performed <strong>email-based outreach</strong> and follow-ups for business development</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="sec">
-          <div class="sec-title">Key Strengths for Back Office</div>
-          <div class="entry">
-            <ul>
-              <li><strong>Data Entry Speed & Accuracy:</strong> 500+ entries/day with zero errors at DMart</li>
-              <li><strong>KYC & Document Verification:</strong> Experienced in verifying identity documents and compliance</li>
-              <li><strong>MS Excel Proficiency:</strong> Pivot Tables, VLOOKUP, conditional formatting, data filtering</li>
-              <li><strong>Email & Chat Communication:</strong> Professional written English, clear and concise</li>
-              <li><strong>Multitasking:</strong> Handled billing, inventory, customer queries simultaneously</li>
-              <li><strong>Typing Speed:</strong> 40+ WPM with high accuracy</li>
-            </ul>
-          </div>
-        </div>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Administrative & Data Processing Intern</span>
+        <span class="entry-date">June 2023 — January 2024</span>
       </div>
-
-      <div class="side">
-        <div class="sec">
-          <div class="sec-title">Skills</div>
-          <div class="skill-group">
-            <div class="skill-label">Office & Data</div>
-            <div class="tags">
-              <span class="tag hl">MS Excel</span>
-              <span class="tag hl">Data Entry</span>
-              <span class="tag hl">KYC Verification</span>
-              <span class="tag">MS Word</span>
-              <span class="tag">PowerPoint</span>
-              <span class="tag">Google Sheets</span>
-              <span class="tag">Email Management</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-label">Communication</div>
-            <div class="tags">
-              <span class="tag hl">Chat Process</span>
-              <span class="tag hl">Email Handling</span>
-              <span class="tag">Customer Service</span>
-              <span class="tag">Phone Handling</span>
-              <span class="tag">Professional Writing</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-label">Technical</div>
-            <div class="tags">
-              <span class="tag">Computer Basics</span>
-              <span class="tag">Internet</span>
-              <span class="tag">Typing (40+ WPM)</span>
-              <span class="tag">CRM Systems</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="sec">
-          <div class="sec-title">Education</div>
-          <div class="edu-item">
-            <div class="edu-title">BSc Computer Science</div>
-            <div class="edu-sub">Mumbai University</div>
-            <div class="edu-sub">Sheth L.U.J & Sir M.V. College</div>
-            <div class="edu-date">2023 — 2026</div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-title">HSC (12th) — Science</div>
-            <div class="edu-sub">V.P.M.'s Valia College, Mumbai</div>
-            <div class="edu-date">2022</div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-title">SSC (10th) — 65%</div>
-            <div class="edu-sub">Airport High School, Mumbai</div>
-            <div class="edu-date">2020</div>
-          </div>
-        </div>
-
-        <div class="sec">
-          <div class="sec-title">Languages</div>
-          <div class="info-line"><span class="dot"></span> <strong>English</strong> — Professional</div>
-          <div class="info-line"><span class="dot"></span> <strong>Hindi</strong> — Fluent</div>
-          <div class="info-line"><span class="dot"></span> <strong>Marathi</strong> — Native</div>
-        </div>
-
-        <div class="sec">
-          <div class="sec-title">Personal</div>
-          <div class="info-line"><strong>DOB:</strong> Available on request</div>
-          <div class="info-line"><strong>Location:</strong> Mumbai</div>
-          <div class="info-line"><strong>Joining:</strong> Immediate</div>
-          <div class="info-line"><strong>Shifts:</strong> 9AM - 6PM OK</div>
-        </div>
-      </div>
+      <div class="entry-org">Freelance — Mumbai, India</div>
+      <ul>
+        <li>Performed <strong>data entry and cleansing</strong> of 1000+ records for small businesses and startups</li>
+        <li>Created <strong>Excel spreadsheets</strong> with formulas for automated calculations, invoicing, and inventory tracking</li>
+        <li>Managed <strong>email campaigns</strong> and client communication for business development outreach</li>
+        <li>Drafted professional <strong>business correspondence</strong> and maintained organized digital filing systems</li>
+      </ul>
     </div>
   </div>
+
+  <!-- KEY SKILLS -->
+  <div class="sec">
+    <div class="sec-head">Key Skills</div>
+    <div class="skills-grid">
+      <span class="sk-label">Data Entry:</span>
+      <span class="sk-value">High-speed data entry (40+ WPM), Data Verification, Database Management, Record Keeping</span>
+      <span class="sk-label">MS Office:</span>
+      <span class="sk-value">Excel (VLOOKUP, Pivot Tables, Formulas), Word, PowerPoint, Outlook</span>
+      <span class="sk-label">Verification:</span>
+      <span class="sk-value">KYC Document Verification, Identity Checks, Compliance Auditing, Invoice Matching</span>
+      <span class="sk-label">Communication:</span>
+      <span class="sk-value">Email Drafting, Chat Process, Phone Handling, Customer Query Resolution</span>
+      <span class="sk-label">Software:</span>
+      <span class="sk-value">Google Sheets, CRM Systems, ERP/POS Systems, Tally Basics, PDF Tools</span>
+      <span class="sk-label">Soft Skills:</span>
+      <span class="sk-value">Attention to Detail, Multitasking, Time Management, Team Coordination, Problem Solving</span>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="sec">
+    <div class="sec-head">Education</div>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Bachelor of Science (BSc) — Computer Science</span>
+        <span class="entry-date">2023 — 2026</span>
+      </div>
+      <div class="entry-org">Sheth L.U.J College of Arts & Sir M.V. College of Science & Commerce — Mumbai University</div>
+    </div>
+    <div class="entry" style="margin-top:6px;">
+      <div class="entry-top">
+        <span class="entry-title">Higher Secondary Certificate (HSC) — Science</span>
+        <span class="entry-date">2022</span>
+      </div>
+      <div class="entry-org">V.P.M.'s Valia College of Arts, Commerce & Science — Mumbai</div>
+    </div>
+    <div class="entry" style="margin-top:6px;">
+      <div class="entry-top">
+        <span class="entry-title">Secondary School Certificate (SSC)</span>
+        <span class="entry-date">2020</span>
+      </div>
+      <div class="entry-org">Airport High School — Mumbai</div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL -->
+  <div class="sec">
+    <div class="sec-head">Additional Information</div>
+    <div class="skills-grid">
+      <span class="sk-label">Languages:</span>
+      <span class="sk-value">English (Professional), Hindi (Fluent), Marathi (Native)</span>
+      <span class="sk-label">Availability:</span>
+      <span class="sk-value">Immediate Joiner | Monday-Friday 9AM-6PM preferred | Flexible for any Mumbai location</span>
+      <span class="sk-label">Interests:</span>
+      <span class="sk-value">Financial Technology, Banking Operations, Process Automation</span>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
-<!-- deployed Fri May 15 09:00:56 IST 2026 -->
