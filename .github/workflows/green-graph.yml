@@ -1,0 +1,92 @@
+name: 🟩 Green Graph - Daily Auto Commit
+
+on:
+  schedule:
+    # Roz 3 baar chalega — zyada commits = DARKER green
+    - cron: '30 4 * * *'   # 10:00 AM IST (morning commit)
+    - cron: '30 10 * * *'  # 4:00 PM IST (afternoon commit)
+    - cron: '0 16 * * *'   # 9:30 PM IST (night commit)
+  workflow_dispatch: # Manual bhi chala sakte ho
+
+permissions:
+  contents: write
+
+jobs:
+  green-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🟩 Generate activity & commit
+        run: |
+          # Git config
+          git config user.name "Azad Ansari"
+          git config user.email "ansariazad@users.noreply.github.com"
+
+          # Random number of updates (1-4) for natural look
+          NUM_UPDATES=$((RANDOM % 4 + 1))
+          
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          DAY_OF_WEEK=$(date +%u)  # 1=Mon, 7=Sun
+          HOUR=$(date +%H)
+
+          # Weekend pe kam commits (natural lagta hai)
+          if [ "$DAY_OF_WEEK" -ge 6 ]; then
+            # 40% chance skip on weekends
+            if [ $((RANDOM % 10)) -lt 4 ]; then
+              echo "⏭️ Skipping weekend commit (natural pattern)"
+              exit 0
+            fi
+            NUM_UPDATES=$((RANDOM % 2 + 1))
+          fi
+
+          # Activity log update
+          for i in $(seq 1 $NUM_UPDATES); do
+            echo "[$TIMESTAMP] Session $i — coding activity logged" >> activity.log
+          done
+
+          # Realistic data file update
+          cat > data.txt << EOF
+          Last Active: $TIMESTAMP
+          Total Sessions: $(wc -l < activity.log)
+          Current Streak: Active
+          Focus: AI/ML Engineering
+          Status: Building 🔥
+          EOF
+
+          # Commit messages pool — realistic dikhte hain
+          MESSAGES=(
+            "refactor: improve code structure"
+            "chore: update project configs"
+            "docs: update documentation"
+            "fix: resolve edge case handling"
+            "feat: add utility function"
+            "style: improve code formatting"
+            "test: add test coverage"
+            "perf: optimize performance"
+            "build: update dependencies"
+            "ci: improve workflow"
+            "chore: daily maintenance"
+            "docs: update README notes"
+            "refactor: clean up modules"
+            "fix: patch minor issues"
+            "feat: enhance logging"
+            "style: consistent formatting"
+            "chore: sync project files"
+            "docs: add inline comments"
+            "refactor: simplify logic"
+            "fix: handle null checks"
+          )
+
+          MSG_INDEX=$((RANDOM % ${#MESSAGES[@]}))
+          COMMIT_MSG="${MESSAGES[$MSG_INDEX]}"
+
+          git add -A
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "$COMMIT_MSG"
+          git push
+
+          echo "✅ Committed: $COMMIT_MSG ($NUM_UPDATES updates)"
