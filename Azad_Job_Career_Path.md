@@ -5,96 +5,189 @@
 
 ---
 
-## 📊 CAREER OVERVIEW — Ek Nazar Me
+## 📊 CAREER OVERVIEW — Ek Nazar Me (UPDATED 26 May 2026)
+
+> ⚠️ **i3systems data annotator job NAHI HUA. Naya plan — better options dhundh rahe hain.**
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║ AGE 21 │ 2026     │ JOB #1: i3systems        │ ₹2L/yr    │ Entry   ║
-║        │          │ + Freelance (Fiverr/UW)   │ +₹2-4L    │         ║
+║ AGE 21 │ 2026     │ JOB #1: Python Dev/Remote  │ ₹3-6L     │ Entry  ║
+║        │          │ + Freelance (Fiverr/UW)    │ +₹2-4L    │        ║
 ╠════════╪══════════╪══════════════════════════════════════════════════╣
-║ AGE 22 │ 2027     │ NIT MCA (NIMCET crack)    │ Freelance  │ Study  ║
-║ AGE 23 │ 2028     │ MCA Year 2 + Internship   │ ₹3-7L/yr  │ Build  ║
+║ AGE 22 │ 2027     │ NIT MCA (NIMCET crack)     │ Freelance  │ Study  ║
+║ AGE 23 │ 2028     │ MCA Year 2 + Internship    │ ₹3-7L/yr  │ Build  ║
 ╠════════╪══════════╪══════════════════════════════════════════════════╣
-║ AGE 24 │ 2029     │ JOB #2: Campus Placement  │ ₹12-15L   │ 🚀     ║
-║ AGE 25 │ 2030     │ Promotion + IELTS         │ ₹15-20L   │ Grow   ║
+║ AGE 24 │ 2029     │ JOB #2: Campus Placement   │ ₹12-15L   │ 🚀     ║
+║ AGE 25 │ 2030     │ Promotion + IELTS          │ ₹15-20L   │ Grow   ║
 ╠════════╪══════════╪══════════════════════════════════════════════════╣
-║ AGE 26 │ 2031     │ JOB #3: First Switch      │ ₹22-30L   │ Jump   ║
-║        │          │ 💍 SHAADI                  │           │        ║
-║ AGE 27 │ 2032     │ Senior Role               │ ₹30-40L   │ Lead   ║
+║ AGE 26 │ 2031     │ JOB #3: First Switch       │ ₹22-30L   │ Jump   ║
+║        │          │ 💍 SHAADI                   │           │        ║
+║ AGE 27 │ 2032     │ Senior Role                │ ₹30-40L   │ Lead   ║
 ╠════════╪══════════╪══════════════════════════════════════════════════╣
-║ AGE 28 │ 2033     │ JOB #4: Abroad/Remote     │ ₹45-65L   │ 🌍     ║
-║ AGE 29 │ 2034     │ Settled                   │ ₹55-75L   │ Stable ║
-║ AGE 30 │ 2035     │ Tech Lead / Staff Eng     │ ₹70-100L+ │ 🏆     ║
+║ AGE 28 │ 2033     │ JOB #4: Abroad/Remote      │ ₹45-65L   │ 🌍     ║
+║ AGE 29 │ 2034     │ Settled                    │ ₹55-75L   │ Stable ║
+║ AGE 30 │ 2035     │ Tech Lead / Staff Eng      │ ₹70-100L+ │ 🏆     ║
 ╚════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## JOB #1: i3systems — AI Data Specialist (May 2026 - June 2027)
+## JOB #1: ABHI DHUNDH — Multiple Options (June 2026+)
 
-### 📋 Complete Details:
-| Item | Detail |
-|------|--------|
-| **Company** | i3systems — AI/Insurance tech company |
-| **Role** | AI Data Annotation Specialist |
-| **Join Date** | May/June 2026 |
-| **Exit Date** | June 2027 (12 months maximum) |
-| **Salary** | ₹12,000-20,000/month (₹1.5-2.4L/year) |
-| **Location** | Mumbai (office) |
-| **Work Hours** | 9 AM - 6 PM, Mon-Fri |
-| **Commute** | Train/Bus — ₹1,500/month budget |
-| **Why Join?** | AI industry experience, NOT salary |
+> **i3systems nahi hua — KAAM KI BAAT. Ek door band hua toh 10 khule.**
+> **Tera skill set (Python + FastAPI + AI/LLM + Docker) bahut STRONG hai fresher ke liye.**
+> **Salary range: ₹3.5L-6L (fresher Python dev) — i3systems se BETTER!**
 
-### ✅ i3systems Me Month-by-Month Plan:
+### 🥇 OPTION A: Junior Python Developer (BEST — ₹3.5-6L)
 ```
-MONTH 1-3 (LEARNING PHASE):
-├── Annotation tools seekh — CVAT, Labelbox, ya company ka internal tool
-├── Medical data terminology samajh (insurance claims, medical reports)
-├── Quality standards seekh — accuracy 95%+ maintain kar
-├── Team ke saath relationship bana — manager ko impress kar
-└── SIDE: Roz 30 min — NIMCET Math Chapter 1-3
+WHY BEST: Tera MAIN skill Python hai. ClawBot + FastAPI = direct proof.
+SALARY: ₹3.5-6L/year (₹25-50K/month take-home)
+WHERE: Mumbai office OR Remote startups
 
-MONTH 4-6 (VALUE-ADD PHASE):
-├── Python script bana jo manual kaam automate kare
-├── Manager ko bol: "Main ye task Python se faster kar sakta hoon"
-├── Data quality reports banane me help kar
-├── OCR accuracy improve karne ke suggestions de
-└── SIDE: NIMCET — Algebra + Trigonometry complete
+KAHAN APPLY:
+┌─────────────────────────────────────────────────────────────────┐
+│ ⭐ DAILY APPLY (5 jobs/day — roz bina naaga)                    │
+│                                                                 │
+│ 1. LinkedIn: "Python Developer fresher Mumbai"                  │
+│    → linkedin.com/jobs                                          │
+│    → Filter: Entry Level + Mumbai + Remote                      │
+│    → EASY APPLY wale pehle karo (1 click apply)                 │
+│                                                                 │
+│ 2. Instahyre: "Python backend developer"                        │
+│    → instahyre.com                                              │
+│    → Profile complete kar (GitHub link ZAROOR daal)              │
+│    → Companies tujhe invite bhi karegi                          │
+│                                                                 │
+│ 3. Wellfound: "Python developer" (startups)                     │
+│    → wellfound.com                                              │
+│    → Startups directly hire karti hain                          │
+│    → Cover letter me ClawBot + FastAPI mention kar              │
+│                                                                 │
+│ 4. Naukri: "Junior Python developer Mumbai"                     │
+│    → naukri.com                                                 │
+│    → Profile 100% complete kar (naukri score badhaa)            │
+│    → Recruiter calls aayengi                                   │
+│                                                                 │
+│ 5. Indeed: "Python developer fresher"                           │
+│    → indeed.co.in                                               │
+│    → Daily new jobs check kar                                   │
+│                                                                 │
+│ 6. Internshala: "Python full-time"                              │
+│    → internshala.com                                            │
+│    → Intern-to-hire bhi le (3 months trial → full-time)        │
+└─────────────────────────────────────────────────────────────────┘
 
-MONTH 7-9 (LEADERSHIP PHASE):
-├── QA (Quality Assurance) role maang — "Main errors check karunga"
-├── New joiners ko train kar — leadership skill dikhaa
-├── Internal presentation de — "How I automated X task"
-├── Recommendation letter ke liye manager se baat kar
-└── SIDE: NIMCET — Reasoning + CS Awareness complete
-
-MONTH 10-12 (EXIT PHASE):
-├── NIMCET form fill kar (March 2027)
-├── NIMCET mock tests intensive mode
-├── Handover document prepare kar
-├── Last month me professional goodbye
-├── Recommendation letter le le (zaroor!)
-└── NIMCET exam de (June 2027) → CRACK IT! 🎯
-```
-
-### ❌ i3systems Me Kya NAHI Karna:
-```
-✗ Yahan 2+ saal mat ruk — salary nahi badhegi significantly
-✗ Promotion ka desperate wait mat kar — ye stepping stone hai
-✗ Comfort zone me mat baith — ye tera destination nahi hai
-✗ Office politics me mat pad — apna kaam kar, seedha reh
-✗ Late night office mat kar — NIMCET prep time sacrifice mat kar
+INTERVIEW ME KYA BOLNA:
+├── "Maine ClawBot banaya — 32+ tools wala AI Telegram bot"
+├── "FastAPI + Docker + PostgreSQL me production API banaya"
+├── "Python 3+ years experience (personal projects)"
+├── "GitHub pe 259+ contributions — consistent coder hoon"
+└── GitHub link de: github.com/ansariazad
 ```
 
-### 🎯 i3systems Se Kya Leke Jaana Hai:
+### 🥈 OPTION B: Remote AI Data Work (IMMEDIATE INCOME — ₹15-40K/month)
 ```
-✓ Resume Line: "AI Data Specialist — i3systems (AI/Insurance domain)"
-✓ Skills: Medical AI terminology, OCR, Data Annotation, Quality Control
-✓ Python Automation: "Automated data processing pipeline using Python"
-✓ 12 months industry experience — fresher nahi rahega
-✓ Recommendation Letter — manager se zaroor le
-✓ Company ka experience certificate
-✓ Professional network — colleagues ke saath LinkedIn connect
+WHY: Ghar baithe paisa aayega, NIMCET prep ke saath kar sakta hai
+NO INTERVIEW — Signup karo, kaam karo, paisa lo
+FLEXIBLE HOURS — jab chahe tab kaam kar
+
+PLATFORMS (ABHI SIGNUP KAR — SAB FREE):
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. ⭐ Outlier AI (BEST — $15-25/hr = ₹1,200-2,000/hr)         │
+│    → outlier.ai/signup                                          │
+│    → Python/Coding tasks = HIGHEST pay                          │
+│    → Tera Python skill = premium rate milega                    │
+│    → Weekly payment (direct bank transfer)                      │
+│                                                                 │
+│ 2. ⭐ Appen / CrowdGen (₹200-500/hr)                           │
+│    → appen.com → Join CrowdGen                                  │
+│    → Data labeling, search evaluation, text tasks               │
+│    → Hindi language tasks = extra projects milte hain            │
+│                                                                 │
+│ 3. Scale AI (₹300-800/hr)                                       │
+│    → scale.com/careers → Crowd section                          │
+│    → AI training tasks, coding review                           │
+│                                                                 │
+│ 4. DataAnnotation.tech (₹200-600/hr)                            │
+│    → dataannotation.tech                                        │
+│    → AI model training tasks                                    │
+│    → Coding tasks pay more                                      │
+│                                                                 │
+│ 5. OneForma by Centific (₹150-400/hr)                           │
+│    → oneforma.com                                               │
+│    → Multilingual tasks (Hindi + English = advantage)           │
+│                                                                 │
+│ 6. Upwork (₹500-2000/hr for Python)                             │
+│    → upwork.com                                                 │
+│    → "Python Developer" profile bana                            │
+│    → FastAPI/Bot development gigs le                            │
+└─────────────────────────────────────────────────────────────────┘
+
+EXPECTED INCOME (2-3 hrs/day):
+├── Outlier: ₹20,000-40,000/month (coding tasks)
+├── Appen: ₹5,000-12,000/month (data tasks)
+├── Upwork/Fiverr: ₹10,000-30,000/month (freelance)
+└── TOTAL POSSIBLE: ₹25,000-60,000/month (WFH!)
+```
+
+### 🥉 OPTION C: AI/ML Trainee (₹2-4L — Direct AI Career Entry)
+```
+WHERE TO FIND:
+├── Naukri: "AI trainee fresher"
+├── LinkedIn: "Machine Learning intern Mumbai"
+├── Internshala: "AI ML internship full-time"
+└── AngelList/Wellfound: "AI startup hiring"
+
+TARGET COMPANIES:
+├── Fractal Analytics — AI consulting (trainee programs)
+├── Tiger Analytics — ML engineer trainee
+├── Haptik — Conversational AI
+├── Yellow.ai — Chatbot AI company
+├── Small AI startups — they hire freshers more easily
+└── Any company with "AI" or "ML" in their name on LinkedIn
+```
+
+### 🏅 OPTION D: QA Automation / Backend Intern (₹2.5-5L)
+```
+WHY: Python + testing = high demand, easy to get
+├── QA Automation (Selenium + Python): Naukri "QA automation python"
+├── Backend Intern (Django/Flask): Internshala "Python backend"
+├── Technical Support: "Technical support engineer" (easy entry)
+└── DevOps Trainee: "DevOps intern" (Docker knowledge = advantage)
+```
+
+---
+
+### 🎯 MERA RECOMMENDATION — Ye Karo Abhi:
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║  STEP 1 (TODAY — 26 May):                                        ║
+║  ├── Outlier AI pe signup kar (5 min)                             ║
+║  ├── Appen/CrowdGen pe signup kar (5 min)                        ║
+║  ├── DataAnnotation.tech pe signup kar (5 min)                   ║
+║  └── INCOME START: 2-3 din me first task milegi                  ║
+║                                                                   ║
+║  STEP 2 (THIS WEEK):                                             ║
+║  ├── LinkedIn profile update (GitHub link + projects add)        ║
+║  ├── Naukri pe profile bana (100% complete)                      ║
+║  ├── Instahyre pe register                                       ║
+║  ├── Resume update (i3systems hataa, projects highlight)         ║
+║  └── 5 jobs/day apply — DAILY, bina naaga                        ║
+║                                                                   ║
+║  STEP 3 (PARALLEL — next 2 weeks):                               ║
+║  ├── Upwork profile bana (FastAPI + Python + Bot dev)            ║
+║  ├── Fiverr gigs improve (better descriptions + pricing)         ║
+║  ├── NIMCET prep start (RS Aggarwal + RD Sharma)                 ║
+║  └── LeetCode daily 1 problem                                    ║
+║                                                                   ║
+║  RESULT (July 2026):                                              ║
+║  ├── Remote income: ₹20-40K/month (Outlier + freelance)          ║
+║  ├── Ya office job: ₹25-50K/month (Python dev)                   ║
+║  ├── Ya DONO simultaneously! 🔥                                   ║
+║  └── NIMCET prep chal rahi hogi saath me                         ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 ---
