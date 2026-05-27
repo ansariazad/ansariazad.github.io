@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azad Ansari — Python Developer | Bot Builder | API Expert</title>
+    <meta name="description" content="Hire Azad Ansari — Python Developer specializing in Telegram Bots, FastAPI backends, and AI automation. 24-hour delivery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --accent: #6c63ff;
+            --accent-glow: rgba(108, 99, 255, 0.3);
+            --green: #00d4aa;
+            --green-glow: rgba(0, 212, 170, 0.3);
+            --text-primary: #f0f0f5;
+            --text-secondary: #8888a0;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .bg-grid {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(rgba(108,99,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(108,99,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 0;
+        }
+
+        .bg-glow {
+            position: fixed;
+            width: 600px; height: 600px;
+            border-radius: 50%;
+            filter: blur(150px);
+            opacity: 0.15;
+            z-index: 0;
+            animation: float 20s ease-in-out infinite;
+        }
+        .bg-glow-1 { top: -200px; right: -200px; background: var(--accent); }
+        .bg-glow-2 { bottom: -200px; left: -200px; background: var(--green); animation-delay: -10s; }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-40px, 40px); }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 0;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(108,99,255,0.1);
+            border: 1px solid rgba(108,99,255,0.2);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 24px;
+            width: fit-content;
+            animation: fadeUp 0.6s ease;
+        }
+
+        .hero-badge .dot {
+            width: 8px; height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            animation: fadeUp 0.6s ease 0.1s both;
+        }
+
+        .hero h1 .gradient {
+            background: linear-gradient(135deg, var(--accent), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 36px;
+            animation: fadeUp 0.6s ease 0.2s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeUp 0.6s ease 0.3s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #8b5cf6);
+            color: white;
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.05);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 60px 0;
+            animation: fadeUp 0.6s ease 0.4s both;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        /* Section */
+        section { padding: 80px 0; }
+
+        .section-tag {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 48px;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 36px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--green));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .service-card:hover::before { opacity: 1; }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .service-price {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,212,170,0.1);
+            color: var(--green);
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .service-features li {
+            padding: 6px 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .service-features li::before {
+            content: '✓ ';
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .project-card h3 { margin-bottom: 8px; font-size: 1.2rem; }
+        .project-card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px; }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tech-tag {
+            background: rgba(108,99,255,0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 36px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 60px 0; min-height: auto; }
+            .services-grid, .projects-grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Available for freelance work
+            </div>
+            <h1>I Build <span class="gradient">Bots, APIs &<br>Automation</span> That Work.</h1>
+            <p>Python developer specializing in Telegram bots, FastAPI backends, and AI-powered automation. Clean code. Fast delivery. Real results.</p>
+            <div class="hero-cta">
+                <a href="mailto:ansariazad.dev@gmail.com" class="btn btn-primary">📩 Hire Me</a>
+                <a href="https://github.com/ansariazad" class="btn btn-secondary" target="_blank">⚡ GitHub</a>
+                <a href="https://www.fiverr.com/ansariazad" class="btn btn-secondary" target="_blank">🟢 Fiverr</a>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Bots Built</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">259+</div>
+                <div class="stat-label">GitHub Contributions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24hr</div>
+                <div class="stat-label">Average Delivery</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">32+</div>
+                <div class="stat-label">AI Tools Integrated</div>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <div class="section-tag">What I Do</div>
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Telegram & Discord Bots</h3>
+                    <p>Custom bots with AI integration, group management, notifications, and more. Production-ready in 24 hours.</p>
+                    <div class="service-price">From $80</div>
+                    <ul class="service-features">
+                        <li>Custom commands & inline keyboards</li>
+                        <li>AI/ChatGPT integration</li>
+                        <li>Database & user management</li>
+                        <li>Deployment + documentation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Python Automation</h3>
+                    <p>Automate repetitive tasks — web scraping, data processing, email automation, API integrations.</p>
+                    <div class="service-price">From $50</div>
+                    <ul class="service-features">
+                        <li>Web scraping & data extraction</li>
+                        <li>Excel/CSV processing</li>
+                        <li>API integration & automation</li>
+                        <li>Scheduled task runners</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>FastAPI Backends</h3>
+                    <p>Production-ready REST APIs with authentication, database integration, and Docker deployment.</p>
+                    <div class="service-price">From $150</div>
+                    <ul class="service-features">
+                        <li>JWT auth & user management</li>
+                        <li>PostgreSQL / MongoDB integration</li>
+                        <li>Docker containerization</li>
+                        <li>API documentation (Swagger)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="section-tag">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🦀 ClawBot — AI Telegram Assistant</h3>
+                    <p>Multi-tool AI bot with 32+ integrated tools — weather, translate, code execution, web search, image generation, and more.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Telegram API</span>
+                        <span class="tech-tag">Groq AI</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📋 TaskFlow API</h3>
+                    <p>Production REST API for task management with JWT auth, role-based access, PostgreSQL, and full CRUD operations.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🎬 AutoShorts Pipeline</h3>
+                    <p>Automated YouTube Shorts generation pipeline — script writing, voice synthesis, video editing, and scheduled uploading.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FFmpeg</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Cron</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>💹 CryptoWatch</h3>
+                    <p>Real-time cryptocurrency price tracker with alerts, portfolio management, and market analysis dashboard.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Let's Build <span class="gradient">Something</span> Together</h2>
+            <p>Got a project in mind? I deliver in 24 hours. Let's talk.</p>
+            <div class="contact-links">
+                <a href="mailto:ansariazad.dev@gmail.com" class="btn btn-primary">📩 Email Me</a>
+                <a href="https://github.com/ansariazad" class="btn btn-secondary" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ansariazad" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                <a href="https://t.me/ansariazad" class="btn btn-secondary" target="_blank">Telegram</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Azad Ansari. Built with 🔥 and Python.</p>
+        </footer>
+    </div>
+</body>
+</html>
