@@ -6,3 +6,4 @@
 [2026-06-02T20:24:38Z] Studying: frontend — notes updated
 [2026-06-03T07:05:22Z] Studying: testing — notes updated
 [2026-06-03T09:13:55Z] Studying: security — notes updated
+[2026-06-03T11:52:06Z] Studying: react — notes updated
