@@ -4,3 +4,4 @@
 [2026-06-02T17:52:50Z] Studying: react — notes updated
 [2026-06-02T18:37:57Z] Studying: deployment — notes updated
 [2026-06-02T20:24:38Z] Studying: frontend — notes updated
+[2026-06-03T07:05:22Z] Studying: testing — notes updated
