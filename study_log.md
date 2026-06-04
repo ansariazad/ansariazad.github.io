@@ -18,3 +18,4 @@
 [2026-06-04T12:26:20Z] Studying: frontend — notes updated
 [2026-06-04T13:51:56Z] Studying: devops — notes updated
 [2026-06-04T16:32:29Z] Studying: frontend — notes updated
+[2026-06-04T17:44:19Z] Studying: deployment — notes updated
