@@ -27,3 +27,4 @@
 [2026-06-05T13:46:54Z] Studying: api — notes updated
 [2026-06-05T16:12:32Z] Studying: frontend — notes updated
 [2026-06-05T17:13:44Z] Studying: testing — notes updated
+[2026-06-05T19:15:32Z] Studying: python — notes updated
