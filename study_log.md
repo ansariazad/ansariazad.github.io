@@ -26,3 +26,4 @@
 [2026-06-05T12:22:27Z] Studying: react — notes updated
 [2026-06-05T13:46:54Z] Studying: api — notes updated
 [2026-06-05T16:12:32Z] Studying: frontend — notes updated
+[2026-06-05T17:13:44Z] Studying: testing — notes updated
