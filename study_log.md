@@ -24,3 +24,4 @@
 [2026-06-05T08:29:52Z] Studying: backend — notes updated
 [2026-06-05T10:43:10Z] Studying: database — notes updated
 [2026-06-05T12:22:27Z] Studying: react — notes updated
+[2026-06-05T13:46:54Z] Studying: api — notes updated
