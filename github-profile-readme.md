@@ -1,11 +1,11 @@
-# 👋 Hey, I'm Azad Ansari
+# Hey, I'm Azad 👋
 
-**`Python Developer · AI Automation Engineer · Full-Stack Developer`**
+**`AI Automation Engineer · LLM Agent Builder · Production Systems`**
 
-I build intelligent systems that work autonomously. BSc CS graduate from Mumbai who writes production code, not tutorial projects.
+I build AI systems that run autonomously — content engines that publish without human input, and AI agents that control operating systems through natural language. BSc CS from Mumbai. Everything I ship is production-grade.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-00d4ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ansariazad.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/azad-ansari-902035297/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0d9488?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ansariazad.github.io/hire.html)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/azad-ansari-902035297)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansariazadcs232421@gmail.com)
 
 ---
@@ -17,17 +17,17 @@ I build intelligent systems that work autonomously. BSc CS graduate from Mumbai 
 <td width="50%" valign="top">
 
 #### 🤖 [AutoShorts — AI Content Engine](https://github.com/ansariazad/AutoShorts)
-Fully autonomous pipeline: AI script → validation → voice → video → YouTube upload. Processes 4 videos/day with zero human intervention.
+Fully autonomous: LLM script → quality gate → TTS voice → FFmpeg video → YouTube upload. **4 videos/day, zero human input.**
 
 `Python` `Groq LLM` `FFmpeg` `YouTube API` `Edge-TTS` `SQLite`
 
 </td>
 <td width="50%" valign="top">
 
-#### 🦾 [ClawBot — AI Mac Assistant](https://github.com/ansariazad/ClawBot)
-Autonomous AI agent with 32+ tools that controls macOS via Telegram. System control, trading, messaging — all through natural language.
+#### 🦾 [ClawBot — AI Mac Agent](https://github.com/ansariazad/ClawBot)
+Autonomous agent with **32+ tools**. Controls macOS, sends messages, tracks crypto — all via Telegram with LLM reasoning chains.
 
-`Python` `LLM Agent` `Telegram API` `AppleScript` `CoinGecko`
+`Python` `LLM Agent` `Telegram API` `AppleScript` `Tool Calling`
 
 </td>
 </tr>
@@ -35,35 +35,35 @@ Autonomous AI agent with 32+ tools that controls macOS via Telegram. System cont
 <td width="50%" valign="top">
 
 #### 🚑 [EAHP — Emergency Ambulance Portal](https://github.com/ansariazad/EAHP)
-Full-stack ambulance hiring platform with real-time GPS tracking, admin dashboard, and PDF reports.
+Full-stack healthcare platform with real-time GPS tracking, RBAC admin dashboard, and automated PDF receipts.
 
-`Next.js` `React` `Supabase` `Leaflet.js` `Recharts` `jsPDF`
+`Next.js 16` `React 19` `Supabase` `Leaflet.js` `Recharts`
 
 </td>
 <td width="50%" valign="top">
 
-#### 📊 [CryptoWatch — Live Price Tracker](https://github.com/ansariazad/CryptoWatch)
-Real-time crypto dashboard with historical charts, portfolio calculator, and price alert system.
+#### ⚡ [TaskFlow — Production REST API](https://github.com/ansariazad/TaskFlow)
+JWT auth with token rotation, RBAC, filtering, pagination, auto-generated OpenAPI docs.
 
-`Python` `Flask` `CoinGecko API` `Chart.js` `SMTP`
+`FastAPI` `SQLite` `JWT` `Pydantic` `Docker`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### ⚡ [TaskFlow — RESTful API](https://github.com/ansariazad/TaskFlow)
-Production-grade task management API with JWT auth, RBAC, and auto-generated Swagger docs.
+#### 📊 [CryptoWatch — Crypto Dashboard](https://github.com/ansariazad/CryptoWatch)
+Real-time tracker for 50+ assets with historical charts, portfolio P/L, and email price alerts.
 
-`Python` `FastAPI` `SQLite` `JWT` `OpenAPI`
+`Python` `Flask` `CoinGecko API` `Chart.js` `SMTP`
 
 </td>
 <td width="50%" valign="top">
 
-#### 🎮 Unity Game Prototypes
-Game projects with custom physics, player controllers, and scene management in Unity Engine.
+#### 🧠 More Projects
+Building in public. Check my pinned repos for the latest work in AI agents, RAG pipelines, and full-stack SaaS.
 
-`C#` `Unity Engine` `Physics` `Game Design`
+`LangChain` `RAG` `Vector DBs` `n8n` `WhatsApp API`
 
 </td>
 </tr>
@@ -73,31 +73,32 @@ Game projects with custom physics, player controllers, and scene management in U
 
 ### 🛠️ Tech Stack
 
+**AI & Agents:**
+![LLM](https://img.shields.io/badge/LLM_Agents-FF6B35?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
+![Ollama](https://img.shields.io/badge/Ollama-000?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-8B5CF6?style=flat-square)
+
 **Languages:**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-**AI & Automation:**
-![Groq](https://img.shields.io/badge/Groq_LLM-FF6B35?style=flat-square)
-![Ollama](https://img.shields.io/badge/Ollama-000?style=flat-square)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
-
-**Web & Frameworks:**
+**Backend & Frontend:**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000?style=flat-square&logo=flask&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
-**Tools:**
+**Tools & Infra:**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![Unity](https://img.shields.io/badge/Unity-000?style=flat-square&logo=unity&logoColor=white)
 
 ---
 
@@ -108,13 +109,16 @@ Game projects with custom physics, player controllers, and scene management in U
 <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ansariazad&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" />
 </p>
 
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=ansariazad&theme=tokyonight&hide_border=true&background=0D1117" />
+</p>
+
 ---
 
-- 🔭 Looking for **Python / AI / Full-Stack** roles in Mumbai
-- 🌱 Exploring **LLM agent architectures** and **distributed systems**
-- 💬 Ask me about **Python automation, AI pipelines, or API design**
-- 📫 Reach me at **ansariazadcs232421@gmail.com**
+> 🟢 **Open to Work** — AI Engineer, Backend Engineer, Founding Engineer roles
+> 📍 Mumbai, India · Immediate Joiner
+> 📫 ansariazadcs232421@gmail.com · [ansariazad.github.io](https://ansariazad.github.io/hire.html)
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ansariazad&color=00d4ff&style=flat-square" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=ansariazad&color=0d9488&style=flat-square" alt="Profile views" />
 </p>
