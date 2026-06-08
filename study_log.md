@@ -36,3 +36,4 @@
 [2026-06-06T18:47:18Z] Studying: devops — notes updated
 [2026-06-07T08:06:13Z] Studying: security — notes updated
 [2026-06-08T09:11:29Z] Studying: frontend — notes updated
+[2026-06-08T17:50:23Z] Studying: database — notes updated
