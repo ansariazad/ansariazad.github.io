@@ -38,3 +38,4 @@
 [2026-06-08T09:11:29Z] Studying: frontend — notes updated
 [2026-06-08T17:50:23Z] Studying: database — notes updated
 [2026-06-09T08:07:10Z] Studying: security — notes updated
+[2026-06-09T17:23:52Z] Studying: api — notes updated
