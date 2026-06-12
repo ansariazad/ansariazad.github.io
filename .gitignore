@@ -1,24 +1,51 @@
 # macOS
 .DS_Store
 
+# Logs
+*.log
+
 # ===========================
 # PRIVATE FILES — Local Only
 # ===========================
-# Career strategy docs (personal — not for public GitHub)
+
+# Career strategy docs
 APPLY-NOW.md
-Azad_Ansari_CoverLetter.html
-Azad_Ansari_Resume_ATS.html
-Azad_Career_Roadmap_Walkthrough.md
-Azad_Future_Master_Plan.md
-Azad_Job_Career_Path.md
-Career_Transferability_Guide.md
-Cold_Outreach_Templates.md
-Daily_Checklist.md
+linkedin-guide.md
 Freelance_Profiles_Ready.md
 Interview_Cheatsheet.md
+Cold_Outreach_Templates.md
+Daily_Checklist.md
 Target_Companies.md
+
+# Resumes & cover letters (personal)
+Azad_Ansari_Resume_ATS.html
+Azad_Ansari_CoverLetter.html
+Azad_Ansari_Resume_i3systems_Pro.html
+*.pdf
+
+# Career plans & roadmaps
+Azad_Future_Master_Plan.md
+Azad_Career_Roadmap_Walkthrough.md
+Azad_Job_Career_Path.md
+Azad_AI_ML_Complete_Roadmap.md
+Career_Transferability_Guide.md
+48HR_MONEY_PLAN.md
+JOB-SEARCH-GUIDE.md
+MacBook_Beast_Mode.md
+cover-letter-templates.md
 i3systems_Interview_Guide.md
-linkedin-guide.md
+i3systems-interview-prep.md
+study_log.md
+
+# Old scripts
+green_graph.py
+backfill_graph.py
+generate_i3_resume.py
+generate_resume_pdf.py
+data.txt
+
+# Fiverr images (personal)
+Fiverr_*.png
 
 # Scraped data
 projects/demo_scraper/scraped_data.json
