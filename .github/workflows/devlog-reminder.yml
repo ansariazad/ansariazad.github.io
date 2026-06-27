@@ -1,0 +1,60 @@
+name: 📝 Daily Devlog Reminder
+
+on:
+  schedule:
+    - cron: '30 4 * * 1-5'  # 10:00 AM IST, weekdays only
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().split('T')[0];
+            
+            // Check if today's issue already exists
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'devlog',
+              state: 'open',
+            });
+            
+            const alreadyExists = existing.data.some(i => i.title.includes(today));
+            if (alreadyExists) {
+              console.log('Today\'s devlog reminder already exists');
+              return;
+            }
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `📓 Devlog: ${today}`,
+              body: [
+                `## What did you build today?`,
+                ``,
+                `Create \`devlog/${today}.md\` and log your progress:`,
+                ``,
+                '```markdown',
+                `# ${today}`,
+                ``,
+                `## What I Built / Worked On`,
+                `- `,
+                ``,
+                `## Problems Solved`,
+                `- `,
+                ``,
+                `## What I Learned`,
+                `- `,
+                '```',
+                ``,
+                `Close this issue after committing your devlog entry.`,
+              ].join('\n'),
+              labels: ['devlog'],
+            });

@@ -5,10 +5,10 @@
 *.log
 
 # ===========================
-# PRIVATE FILES — Local Only
+# PRIVATE — Local Only
 # ===========================
 
-# Career strategy docs
+# Career docs
 APPLY-NOW.md
 linkedin-guide.md
 Freelance_Profiles_Ready.md
@@ -17,7 +17,7 @@ Cold_Outreach_Templates.md
 Daily_Checklist.md
 Target_Companies.md
 
-# Resumes & cover letters (personal)
+# Resumes & cover letters
 Azad_Ansari_Resume_ATS.html
 Azad_Ansari_CoverLetter.html
 Azad_Ansari_Resume_i3systems_Pro.html
@@ -35,17 +35,20 @@ MacBook_Beast_Mode.md
 cover-letter-templates.md
 i3systems_Interview_Guide.md
 i3systems-interview-prep.md
-study_log.md
 
-# Old scripts
+# Old scripts (deprecated)
 green_graph.py
 backfill_graph.py
 generate_i3_resume.py
 generate_resume_pdf.py
 data.txt
+study_log.md
 
-# Fiverr images (personal)
+# Fiverr images
 Fiverr_*.png
 
 # Scraped data
 projects/demo_scraper/scraped_data.json
+
+# Security notes (private)
+rat/
